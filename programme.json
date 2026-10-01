@@ -1,0 +1,357 @@
+{
+ "source": "https://mkausa.org/events/ijtema/ (programme as published 2026-10-01)",
+ "timezone": "America/New_York",
+ "default_minutes": {
+  "salat": 30,
+  "meals": 75,
+  "main": 60,
+  "stage": 45,
+  "sports": 120,
+  "hub": 120
+ },
+ "items": [
+  {
+   "start": "2026-10-09T05:45:00-04:00",
+   "track": "salat",
+   "title": "Fajr",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-09T08:00:00-04:00",
+   "track": "main",
+   "title": "Live Friday Sermon — Urdu (Khuddam) · English (Atfal)",
+   "where": "Main Ijtema Gah · Atfal Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-09T09:00:00-04:00",
+   "track": "meals",
+   "title": "Breakfast",
+   "where": "Dining Tent",
+   "facility": 18
+  },
+  {
+   "start": "2026-10-09T09:30:00-04:00",
+   "track": "main",
+   "title": "Registration & Welcome",
+   "where": "Welcome Tent",
+   "facility": 39
+  },
+  {
+   "start": "2026-10-09T10:00:00-04:00",
+   "track": "main",
+   "title": "Tent Setup",
+   "where": "Camps",
+   "facility": null
+  },
+  {
+   "start": "2026-10-09T10:00:00-04:00",
+   "track": "hub",
+   "title": "Khuddam Hub & Bazaar Hours",
+   "where": "MKA Hub · Bazaar",
+   "facility": 6
+  },
+  {
+   "start": "2026-10-09T11:30:00-04:00",
+   "track": "meals",
+   "title": "Lunch",
+   "where": "Dining Tent",
+   "facility": 18
+  },
+  {
+   "start": "2026-10-09T13:00:00-04:00",
+   "track": "salat",
+   "title": "Jummah",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-09T14:30:00-04:00",
+   "track": "main",
+   "title": "Flag Hoisting",
+   "where": "MKA Flag",
+   "facility": 5
+  },
+  {
+   "start": "2026-10-09T15:00:00-04:00",
+   "track": "main",
+   "title": "Opening Session — Atfal & Khuddam combined",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-09T16:00:00-04:00",
+   "track": "sports",
+   "title": "Offsite Sports — basketball, soccer, races, badminton, cricket",
+   "where": "Offsite",
+   "facility": null
+  },
+  {
+   "start": "2026-10-09T16:00:00-04:00",
+   "track": "main",
+   "title": "Taleem Qualifiers — Tilawat, English prepared & impromptu speech, Nazm",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-09T16:00:00-04:00",
+   "track": "stage",
+   "title": "Hub Stage: Faith Under Fire · Khilafat stories · Half of Your Faith",
+   "where": "Hub Stage Tent",
+   "facility": 4
+  },
+  {
+   "start": "2026-10-09T16:00:00-04:00",
+   "track": "hub",
+   "title": "Khuddam Hub & Bazaar Hours",
+   "where": "MKA Hub · Bazaar",
+   "facility": 6
+  },
+  {
+   "start": "2026-10-09T19:00:00-04:00",
+   "track": "meals",
+   "title": "Dinner",
+   "where": "Dining Tent",
+   "facility": 18
+  },
+  {
+   "start": "2026-10-09T20:30:00-04:00",
+   "track": "salat",
+   "title": "Maghrib & Isha",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-09T21:00:00-04:00",
+   "track": "main",
+   "title": "Friday Evening Session — Rizwan Khan · Faheem Younus · Luqman Gondal",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-09T22:00:00-04:00",
+   "track": "main",
+   "title": "Jeopardy",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T05:00:00-04:00",
+   "track": "salat",
+   "title": "Tahajjud",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T05:45:00-04:00",
+   "track": "salat",
+   "title": "Fajr and Dars",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T06:00:00-04:00",
+   "track": "main",
+   "title": "Trail Walk around Baagh-e-Ahmad",
+   "where": "Trails",
+   "facility": null
+  },
+  {
+   "start": "2026-10-10T08:00:00-04:00",
+   "track": "meals",
+   "title": "Breakfast",
+   "where": "Dining Tent",
+   "facility": 18
+  },
+  {
+   "start": "2026-10-10T09:30:00-04:00",
+   "track": "main",
+   "title": "Saturday Morning Session — Nasiruddeen Ahmad Tariq · Syed Adil Ahmad · Waseem Sayed",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T10:30:00-04:00",
+   "track": "stage",
+   "title": "Hub Stage: Built, Not Born · Taking the Fight to Them · Raising Ahmadi Excellence",
+   "where": "Hub Stage Tent",
+   "facility": 4
+  },
+  {
+   "start": "2026-10-10T10:30:00-04:00",
+   "track": "sports",
+   "title": "Sports — volleyball, strongman, paintball, chess",
+   "where": "Sports fields",
+   "facility": null
+  },
+  {
+   "start": "2026-10-10T10:30:00-04:00",
+   "track": "main",
+   "title": "Taleem Competitions — Hifz, Urdu speech, English poem, Adhan",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T10:30:00-04:00",
+   "track": "hub",
+   "title": "Khuddam Hub & Bazaar Hours",
+   "where": "MKA Hub · Bazaar",
+   "facility": 6
+  },
+  {
+   "start": "2026-10-10T12:30:00-04:00",
+   "track": "meals",
+   "title": "Lunch",
+   "where": "Dining Tent",
+   "facility": 18
+  },
+  {
+   "start": "2026-10-10T14:00:00-04:00",
+   "track": "salat",
+   "title": "Zuhr & Asr",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T14:30:00-04:00",
+   "track": "main",
+   "title": "Khuddam Session with Respected Ameer Sahib",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T15:30:00-04:00",
+   "track": "main",
+   "title": "Career Fair",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T15:30:00-04:00",
+   "track": "stage",
+   "title": "Hub Stage: The Quest for Truth · Future of Baagh-e-Ahmad",
+   "where": "Hub Stage Tent",
+   "facility": 4
+  },
+  {
+   "start": "2026-10-10T16:15:00-04:00",
+   "track": "sports",
+   "title": "Sports — flag football, wrestling, tug of war, archery, air rifle, chess, kabaddi",
+   "where": "Sports fields",
+   "facility": null
+  },
+  {
+   "start": "2026-10-10T16:15:00-04:00",
+   "track": "stage",
+   "title": "Hub Stage: Bazm-e-Adab — Urdu Mushaira",
+   "where": "Hub Stage Tent",
+   "facility": 4
+  },
+  {
+   "start": "2026-10-10T19:00:00-04:00",
+   "track": "meals",
+   "title": "Dinner",
+   "where": "Dining Tent",
+   "facility": 18
+  },
+  {
+   "start": "2026-10-10T20:30:00-04:00",
+   "track": "salat",
+   "title": "Maghrib & Isha",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T21:00:00-04:00",
+   "track": "main",
+   "title": "Heirs to the Prophets — TED-style talks",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-10T22:00:00-04:00",
+   "track": "main",
+   "title": "Bonfire",
+   "where": "Campfire",
+   "facility": null
+  },
+  {
+   "start": "2026-10-11T05:00:00-04:00",
+   "track": "salat",
+   "title": "Tahajjud",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-11T05:45:00-04:00",
+   "track": "salat",
+   "title": "Fajr and Dars",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-11T08:00:00-04:00",
+   "track": "meals",
+   "title": "Breakfast",
+   "where": "Dining Tent",
+   "facility": 18
+  },
+  {
+   "start": "2026-10-11T08:00:00-04:00",
+   "track": "stage",
+   "title": "Hub Stage: Nashta w/ Murabbian (Urdu Q&A)",
+   "where": "Hub Stage Tent",
+   "facility": 4
+  },
+  {
+   "start": "2026-10-11T08:30:00-04:00",
+   "track": "sports",
+   "title": "Sports Finals — volleyball, Kalai Pakarna, Sabit Kadmi; cricket offsite",
+   "where": "Sports fields",
+   "facility": null
+  },
+  {
+   "start": "2026-10-11T10:00:00-04:00",
+   "track": "stage",
+   "title": "Hub Stage: Voices for Peace · The New World Order and Nizam-e-Wasiyyat",
+   "where": "Hub Stage Tent",
+   "facility": 4
+  },
+  {
+   "start": "2026-10-11T10:00:00-04:00",
+   "track": "hub",
+   "title": "Khuddam Hub & Bazaar Hours",
+   "where": "MKA Hub · Bazaar",
+   "facility": 6
+  },
+  {
+   "start": "2026-10-11T11:00:00-04:00",
+   "track": "main",
+   "title": "Atfal Prize Distribution Ceremony",
+   "where": "Atfal Ijtema Gah",
+   "facility": 1
+  },
+  {
+   "start": "2026-10-11T12:30:00-04:00",
+   "track": "main",
+   "title": "Closing Session — combined; Mufti Muhammad Sadiq Award; closing dua",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-11T14:00:00-04:00",
+   "track": "salat",
+   "title": "Zuhr & Asr",
+   "where": "Main Ijtema Gah",
+   "facility": 7
+  },
+  {
+   "start": "2026-10-11T14:30:00-04:00",
+   "track": "meals",
+   "title": "Lunch (to-go)",
+   "where": "Dining Tent",
+   "facility": 18
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No Code Required</title>
+<style>
+  @font-face { font-family: Montserrat; src: url(montserrat.woff2) format("woff2"); font-weight: 400 700; font-display: swap; }
+  @font-face { font-family: Fraunces; src: url(fraunces.woff2) format("woff2"); font-weight: 400 900; font-display: swap; }
+  /* National Ijtema tokens (Brand Center): navy field, calligraphy gold, white, on-navy muted */
+  :root { --brand-primary: #152c3b; --brand-accent: #f6bc56; --brand-surface: #ffffff; --ijtema-on-navy-muted: #a9c4d2;
+          --font-display: "Fraunces"; --font-body: "Montserrat";
+          /* spacing scale: tight inside a group, generous between the two groups */
+          --space-2xs: 4px; --space-xs: 8px; --space-sm: 16px; --space-md: 24px;
+          --space-lg: clamp(32px, 6vh, 48px); --space-xl: clamp(40px, 8vh, 64px); }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--brand-primary); color: var(--brand-surface); font: 17px/1.5 var(--font-body), system-ui, sans-serif;
+         display: flex; align-items: center; justify-content: center; text-align: center; }
+  main { max-width: 400px; width: 100%; padding: var(--space-lg) 22px; display: flex; flex-direction: column; }
+  p, h1 { margin: 0; text-wrap: balance; }
+
+  /* group 1 — the joke: mark, headline, one line */
+  .symbol { width: 64px; height: auto; margin: 0 auto var(--space-md); }
+  h1 { margin: 0 0 var(--space-xs); font-size: clamp(30px, 8.5vw, 36px); line-height: 1.1; font-weight: 700; color: var(--brand-accent); }
+  .lede { font-size: 18px; font-weight: 500; }
+  .aside { margin-top: var(--space-2xs); font-size: 16px; color: var(--ijtema-on-navy-muted); }
+
+  /* the break between the two thoughts: space plus a short gold rule */
+  .rule { width: 32px; height: 2px; background: var(--brand-accent); border: 0; margin: var(--space-lg) auto; }
+
+  /* group 2 — the call: theme leads straight into the next prayer */
+  .tag { font-family: var(--font-display), Georgia, serif; font-variation-settings: "opsz" 9; font-weight: 900; letter-spacing: -0.015em;
+         font-size: 24px; line-height: 1.2; }
+  .src { margin-top: var(--space-2xs); font-size: 14px; font-weight: 500; color: var(--ijtema-on-navy-muted); }
+  .next { margin-top: var(--space-md); }
+  .next .label { font-size: 14px; font-weight: 500; color: var(--ijtema-on-navy-muted); }
+  .next .what { margin-top: var(--space-2xs); font-size: 22px; font-weight: 700; color: var(--brand-accent); }
+  .next .where { font-family: var(--font-display), Georgia, serif; font-variation-settings: "opsz" 9; font-weight: 900; letter-spacing: -0.015em;
+                 font-size: 17px; color: var(--ijtema-on-navy-muted); }
+
+  /* actions: two equal outline buttons, 48px tap targets */
+  .actions { margin-top: var(--space-xl); display: flex; gap: var(--space-sm); justify-content: center; }
+  .btn { flex: 1; max-width: 170px; min-height: 48px; display: inline-flex; align-items: center; justify-content: center;
+         border: 1.5px solid var(--brand-accent); border-radius: 999px; color: var(--brand-accent); font-size: 16px; font-weight: 600;
+         text-decoration: none; transition: background-color .2s ease-out, color .2s ease-out; }
+  .btn:hover { background: var(--brand-accent); color: var(--brand-primary); }
+  .btn:active { transform: translateY(1px); }
+  .btn:focus-visible { outline: 2px solid var(--brand-surface); outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="symbol" src="symbol-gold.svg" alt="National Ijtema">
+  <h1>No Code Required</h1>
+  <p class="lede">Some connections don't need a voucher.</p>
+  <p class="aside">Allah is always in range, and He never drops the call.</p>
+
+  <hr class="rule">
+
+  <p class="tag">Come Towards Success</p>
+  <p class="src">Hayya Alal Falah</p>
+  <div class="next" id="next" hidden>
+    <div class="label">Your Next Connection</div>
+    <div class="what" id="next-what"></div>
+    <div class="where" id="next-where"></div>
+  </div>
+
+  <nav class="actions" aria-label="More">
+    <a class="btn" href="https://mkausa.org/events/ijtema/">Programme</a>
+    <a class="btn" href="https://muneebpal.github.io/ijtema-map1/">Site Map</a>
+  </nav>
+</main>
+<script>
+// next Salat from the shared programme.json (same source as the NOC and the programme page)
+const tz = "America/New_York";
+const time = d => d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: tz });
+const day = d => d.toLocaleDateString("en-US", { weekday: "long", timeZone: tz });
+const sameDay = (a, b) => a.toLocaleDateString("en-CA", { timeZone: tz }) === b.toLocaleDateString("en-CA", { timeZone: tz });
+function show(p) {
+  const now = new Date();
+  const salat = p.items.filter(i => i.track === "salat").map(i => ({ ...i, t: new Date(i.start) })).sort((a, b) => a.t - b.t);
+  const n = salat.find(i => i.t.getTime() + 10 * 60000 > now);   // stays "next" until 10 min after it starts
+  if (!n) return;
+  document.getElementById("next-what").textContent = `${n.title} · ${sameDay(n.t, now) ? "" : day(n.t) + " "}${time(n.t)}`;
+  document.getElementById("next-where").textContent = n.where;
+  document.getElementById("next").hidden = false;
+}
+fetch("programme.json", { cache: "no-store" }).then(r => r.json()).then(p => { show(p); setInterval(() => show(p), 60000); }).catch(() => {});
+</script>
+</body>
+</html>
